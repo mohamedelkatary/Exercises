@@ -4,10 +4,52 @@
     <title>test</title>
   </head>
   <body>
-    <form action="" method="get" enctype="application/x-www-form-urlencoded" >
-      My Form
-    </form>
+    <form>
+      Are you a Riders Fan?
+      <input type="radio" name="ridersfan" value="true" checked> Oh Yeahhhhhh
+      <input type="radio" name="ridersfan" value="false"> No
 
+      <hr>
+      <form>
+        Select your favourite Harry Potter wizards
+        <input type="checkbox" name="a" value="harry potter"  > Harry Potter
+        <input type="checkbox" name="b" value="hermione granger" > Hermione Granger
+        <input type="checkbox" name="c" value="ron weasley"> Ron Weasley
+        <input type="checkbox" name="wizards" value="aberforth dumbledore"> Aberforth Dumbledore
+      </form>
+      <hr>
+      <form>
+        <input type="hidden" name="product-id" value="1" >
+      </form>
+      <hr>
+    </form>
+    <textarea name="about"></textarea>
+    <hr>
+    <form>
+      <select name="countries">
+        <option value="">Please select a Country</option>
+        <option value="arg">Argentina</option>
+        <option value="bra">Brasil</option>
+        <option value="chl">Chile</option>
+        <option value="can">Canada</option>
+      </select>
+    </form>
+    <hr>
+    <form>
+      <select name="countries" multiple="multiple" size="4">
+        <option value="">Please select a Country</option>
+        <option value="arg">Argentina</option>
+        <option value="bra">Brasil</option>
+        <option value="chl">Chile</option>
+        <option value="can" selected>Canada</option>
+      </select>
+    </form>
+    <hr>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="filename" />
+      <input type="file" name="filename" multiple="multiple" />
+      <input type="file" name="filename" multiple />
+    </form>
 
 
 
