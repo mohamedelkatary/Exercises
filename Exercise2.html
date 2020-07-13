@@ -9,13 +9,14 @@
         #ul2{list-style-image:url(icons8-plus-10.png);}
         ol li{color: blue;}
         #ul3{border: 1px solid black;}
-        #ul3 li{padding-right: 10px;display:inline-block;}
+        #ul3 li{padding-right: 10px;float: left;}
         #drop{display: none;}
         #li1:hover #drop{display: block;}
-        #ul3{position:absolute;top: 0;}
+        #ul3{position:fixed;top: 0;}
         #ul1{margin-top: 80px;}
-        
-      
+        #ol1{position:fixed; bottom: 0;right: 0;margin: 10px;}
+        #dropp{display: none;}
+        #li2:hover #dropp{display: block;}
 
         
       </style>
@@ -49,7 +50,13 @@
         </ul>
         
         <ul id="ul3">
-            <li>Item One </li>
+
+              <li id="li2">Item One
+                <ul id="dropp">
+                  <div> one</div>
+                  <div> two</div>
+                </ul>
+            </li>
             <li>Item Two</li>
             <li>Item Three</li>
             <li>Item Four</li>
@@ -59,7 +66,7 @@
             <li>Item Eight</li>
         </ul>
         
-        <ol>
+        <ol id="ol1">
             <li>Item One</li>
             <li>Item Two</li>
             <li>Item Three</li>
