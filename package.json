@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Routing-Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedelkatary/Exercises.git"
+  },
+  "author": "Elkatary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedelkatary/Exercises/issues"
+  },
+  "homepage": "https://github.com/mohamedelkatary/Exercises#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
